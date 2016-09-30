@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:eegsmart="http://schemas.android.com/apk/res-auto"
+    android:background="#26223f"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="wy.aboutview.activity.CircleActivity">
+    <wy.aboutview.views.RoundProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/circleprogress"
+        app:startColor="#4c74ec"
+        app:endColor="#a6efb7"
+        android:textColor="#F7D175"
+        eegsmart:roundColor="#A1A1A1"
+        eegsmart:roundWidth="10dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        eegsmart:max="100"
+        eegsmart:style="STROKE"
+        eegsmart:textSize="12sp"/>
+</RelativeLayout>

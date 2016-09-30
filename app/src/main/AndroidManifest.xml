@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="wy.aboutview">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.CircleActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".activity.HistogramActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name=".activity.SelectActivity" />
+        <activity android:name=".activity.TextActivity" />
+        <activity android:name=".activity.AnimationListActivity" />
+        <activity android:name=".activity.AnimationGridActivity" />
+        <activity android:name=".activity.GridActivity" />
+        <activity android:name=".activity.ListActivity" />
+        <activity
+            android:name=".activity.RecycleActivity"
+            android:theme="@style/DemoTheme.NoActionBar" />
+        <activity android:name=".activity.ComplexActivity" />
+        <activity android:name=".activity.MultipleActivity"></activity>
+    </application>
+
+</manifest>

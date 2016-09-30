@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">aboutview</string>
+
+    <string name="age_less_15">小于15岁</string>
+    <string name="age_less_20">15-20岁</string>
+    <string name="age_less_25">20-25岁</string>
+    <string name="age_less_30">25-30岁</string>
+    <string name="age_less_35">30-35岁</string>
+    <string name="age_less_40">35-40岁</string>
+    <string name="age_less_50">40-50岁</string>
+    <string name="age_less_60">50-60岁</string>
+    <string name="age_more_60">大于60岁</string>
+
+    <string-array name="adapters">
+        <item>Alpha</item>
+        <item>Slide left</item>
+        <item>Slide right</item>
+        <item>Slide bottom</item>
+        <item>Scale</item>
+        <item>Slide bottom</item>
+    </string-array>
+
+    <string-array name="animators">
+        <item>Slide left</item>
+        <item>Slide right</item>
+        <item>Slide top</item>
+        <item>Slide bottom</item>
+        <item>Scale</item>
+        <item>Slide right and Scale</item>
+    </string-array>
+</resources>
