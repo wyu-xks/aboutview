@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView edittext;
     private TextView recylerview;
     private TextView multipleview;
+    private TextView toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         edittext = (TextView) findViewById(R.id.edittext);
         recylerview = (TextView) findViewById(R.id.recylerview);
         multipleview = (TextView) findViewById(R.id.multipleview);
+        toolbar = (TextView) findViewById(R.id.toolbar);
 
         pro.setOnClickListener(this);
         selection.setOnClickListener(this);
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         edittext.setOnClickListener(this);
         recylerview.setOnClickListener(this);
         multipleview.setOnClickListener(this);
+        toolbar.setOnClickListener(this);
     }
 
     @Override
@@ -57,6 +60,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.multipleview:
                 startActivity(new Intent(MainActivity.this, MultipleActivity.class));
+                break;
+            case R.id.toolbar:
+                startActivity(new Intent(MainActivity.this, ToolbarActivity.class));
                 break;
         }
     }

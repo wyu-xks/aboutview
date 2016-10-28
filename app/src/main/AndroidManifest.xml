@@ -31,7 +31,8 @@
             android:name=".activity.RecycleActivity"
             android:theme="@style/DemoTheme.NoActionBar" />
         <activity android:name=".activity.ComplexActivity" />
-        <activity android:name=".activity.MultipleActivity"></activity>
+        <activity android:name=".activity.MultipleActivity" />
+        <activity android:name=".activity.ToolbarActivity"></activity>
     </application>
 
 </manifest>

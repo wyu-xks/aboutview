@@ -28,4 +28,10 @@
         <item>Scale</item>
         <item>Slide right and Scale</item>
     </string-array>
+
+    <string name="menu_search">搜索</string>
+    <string name="menu_notifications">通知</string>
+    <string name="home_page">首页</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_about_us">关于</string>
 </resources>
