@@ -23,5 +23,9 @@ MultipleCircleView
 
 Toolbar  
 
-![image](https://github.com/wyu-xks/aboutview/blob/master/toolbar.gif) 
+![image](https://github.com/wyu-xks/aboutview/blob/master/toolbar.gif)  
+
+AlarmClockView  
+
+![image](https://github.com/wyu-xks/aboutview/blob/master/alarmclockview.gif)
   
