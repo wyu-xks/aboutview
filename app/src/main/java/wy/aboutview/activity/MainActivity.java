@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import wy.aboutview.R;
+import wy.aboutview.views.AlarmClockView;
 import wy.aboutview.views.MultipleCircleView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView recylerview;
     private TextView multipleview;
     private TextView toolbar;
+    private TextView alarmview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         recylerview = (TextView) findViewById(R.id.recylerview);
         multipleview = (TextView) findViewById(R.id.multipleview);
         toolbar = (TextView) findViewById(R.id.toolbar);
+        alarmview = (TextView) findViewById(R.id.alarmview);
 
         pro.setOnClickListener(this);
         selection.setOnClickListener(this);
@@ -38,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         recylerview.setOnClickListener(this);
         multipleview.setOnClickListener(this);
         toolbar.setOnClickListener(this);
+        alarmview.setOnClickListener(this);
     }
 
     @Override
@@ -63,6 +67,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.toolbar:
                 startActivity(new Intent(MainActivity.this, ToolbarActivity.class));
+                break;
+            case R.id.alarmview:
+                startActivity(new Intent(MainActivity.this, AlarmClockActivity.class));
                 break;
         }
     }

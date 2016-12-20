@@ -25,6 +25,7 @@
     </declare-styleable>
 
 
+
     <style name="anim_bottombar">
         <item name="android:windowEnterAnimation">@anim/picker_in</item>
         <item name="android:windowExitAnimation">@anim/picker_out</item>
@@ -68,5 +69,12 @@
     <style name="Theme.ToolBar.Base" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:textColorPrimary">#a7924a</item>
         <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="big_time_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/music_little_title</item>
+        <item name="android:textSize">20sp</item>
     </style>
 </resources>

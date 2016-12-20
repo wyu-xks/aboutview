@@ -32,7 +32,8 @@
             android:theme="@style/DemoTheme.NoActionBar" />
         <activity android:name=".activity.ComplexActivity" />
         <activity android:name=".activity.MultipleActivity" />
-        <activity android:name=".activity.ToolbarActivity"></activity>
+        <activity android:name=".activity.ToolbarActivity" />
+        <activity android:name=".activity.AlarmClockActivity"></activity>
     </application>
 
 </manifest>

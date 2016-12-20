@@ -5,4 +5,6 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="md_blue_100">#BBDEFB</color>
+    <color name="music_little_title">#e9f0ff</color>
+    <color name="person_center_color">#07041d</color>
 </resources>
