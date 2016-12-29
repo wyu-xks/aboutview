@@ -77,4 +77,9 @@
         <item name="android:textColor">@color/music_little_title</item>
         <item name="android:textSize">20sp</item>
     </style>
+
+    <declare-styleable name="WaveView">
+        <attr name="wave_color" format="color"></attr>
+        <attr name="wave_circle" format="boolean"></attr>
+    </declare-styleable>
 </resources>

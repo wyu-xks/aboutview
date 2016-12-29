@@ -8,13 +8,19 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/PushSDK" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/eegcatch" />
+            <option value="$PROJECT_DIR$/parrotdrone" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/PushSDK" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/eegcatch" />
+            <option value="$PROJECT_DIR$/parrotdrone" />
           </set>
         </option>
       </GradleProjectSettings>

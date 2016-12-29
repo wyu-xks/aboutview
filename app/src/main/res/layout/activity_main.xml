@@ -64,6 +64,17 @@
         android:layout_height="0.5dp"
         android:background="#d4d4d4"/>
     <TextView
+        android:id="@+id/waveview"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="波浪型进度条" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d4d4d4"/>
+    <TextView
         android:id="@+id/multipleview"
         android:layout_marginLeft="10dp"
         android:gravity="center_vertical"
@@ -92,4 +103,5 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:text="custom alarmclock  view" />
+
 </LinearLayout>
