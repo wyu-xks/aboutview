@@ -28,4 +28,8 @@ Toolbar
 AlarmClockView  
 
 ![image](https://github.com/wyu-xks/aboutview/blob/master/alarmclockview.gif)
+
+WaveView  
+
+![image](https://github.com/wyu-xks/aboutview/blob/master/waveview.gif)
   

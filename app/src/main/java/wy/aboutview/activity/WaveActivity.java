@@ -17,7 +17,7 @@ public class WaveActivity extends AppCompatActivity {
     private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
-            if (progrees == 60) return;
+            if (progrees == 61) return;
             Log.e("progress", progrees + "");
             waveView.setmProgress(progrees++);
             waveCircleView.setmProgress(progrees++);
