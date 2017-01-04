@@ -34,7 +34,8 @@
         <activity android:name=".activity.MultipleActivity" />
         <activity android:name=".activity.ToolbarActivity" />
         <activity android:name=".activity.AlarmClockActivity" />
-        <activity android:name=".activity.WaveActivity"></activity>
+        <activity android:name=".activity.WaveActivity" />
+        <activity android:name=".activity.SuperActivity"></activity>
     </application>
 
 </manifest>

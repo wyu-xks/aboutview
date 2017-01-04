@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView toolbar;
     private TextView alarmview;
     private TextView waveview;
+    private TextView supertextview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         toolbar = (TextView) findViewById(R.id.toolbar);
         alarmview = (TextView) findViewById(R.id.alarmview);
         waveview = (TextView) findViewById(R.id.waveview);
+        supertextview = (TextView) findViewById(R.id.supertextview);
 
         pro.setOnClickListener(this);
         selection.setOnClickListener(this);
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         toolbar.setOnClickListener(this);
         alarmview.setOnClickListener(this);
         waveview.setOnClickListener(this);
+        supertextview.setOnClickListener(this);
     }
 
     @Override
@@ -76,6 +79,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.waveview:
                 startActivity(new Intent(MainActivity.this, WaveActivity.class));
+                break;
+            case R.id.supertextview:
+                startActivity(new Intent(MainActivity.this, SuperActivity.class));
                 break;
         }
     }

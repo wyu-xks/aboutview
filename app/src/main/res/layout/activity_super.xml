@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    tools:context="wy.aboutview.activity.SuperActivity">
+    <com.allen.library.SuperTextView
+        android:id="@+id/super_tv"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        stv:sLeftBottomTextColor2="@color/colorAccent"
+        stv:sLeftBottomTextString="招商银行（8888）"
+        stv:sLeftBottomTextString2="限额说明>>"
+        stv:sLeftIconRes="@mipmap/targer_icon"
+        stv:sLeftTopTextString="银行卡支付"
+        stv:sRightCheckBoxShow="true"
+        stv:sLineShow="bottom"
+        stv:sLeftBottomTextColor="#f00"
+        stv:sLeftTextColor="#ff0"
+        stv:sLeftTopTextColor="#00f"
+        />
+</RelativeLayout>

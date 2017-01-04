@@ -32,4 +32,6 @@ dependencies {
     compile 'com.yqritc:recyclerview-flexibledivider:1.4.0'
     compile 'com.github.gabrielemariotti.recyclerview:recyclerview-animators:0.3.0-SNAPSHOT@aar'
     compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.lygttpod:SuperTextView:1.0.8'
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
 }

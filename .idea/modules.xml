@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PushSDK/PushSDK.iml" filepath="$PROJECT_DIR$/PushSDK/PushSDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eegcatch/eegcatch.iml" filepath="$PROJECT_DIR$/eegcatch/eegcatch.iml" />
       <module fileurl="file://$PROJECT_DIR$/gradientprogress.iml" filepath="$PROJECT_DIR$/gradientprogress.iml" />
-      <module fileurl="file://$PROJECT_DIR$/parrotdrone/parrotdrone.iml" filepath="$PROJECT_DIR$/parrotdrone/parrotdrone.iml" />
     </modules>
   </component>
 </project>
