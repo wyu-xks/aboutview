@@ -1,35 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="20dp"
+    android:background="#434343"
     tools:context="wy.aboutview.activity.TextActivity">
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/edt_use"
+    <TextView
+        android:textColor="#fff"
+        android:layout_marginTop="30dp"
+        android:textSize="22sp"
+        android:text="EEGSmart"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/edt_user"
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="#fff"
+            android:id="@+id/edt_use"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="user"/>
-    </android.support.design.widget.TextInputLayout>
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/edt_pwd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            android:layout_height="wrap_content">
+            <EditText
+                android:textColor="#fff"
+                android:id="@+id/edt_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="user" />
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:inputType="textPassword"
-            android:id="@+id/edt_password"
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="#fff"
+            android:id="@+id/edt_pwd"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="password"/>
-    </android.support.design.widget.TextInputLayout>
-</LinearLayout>
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:textColor="#fff"
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:textColor="#fff"
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="35dp"
+        android:text="login"
+        android:layout_below="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+</RelativeLayout>

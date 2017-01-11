@@ -3,14 +3,20 @@ package wy.aboutview.activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import okhttp3.Request;
+import okhttp3.Response;
+import okhttp3.ResponseBody;
 import wy.aboutview.R;
-import wy.aboutview.views.AlarmClockView;
-import wy.aboutview.views.MultipleCircleView;
+import wy.aboutview.callback.BaseCallback;
+import wy.aboutview.okhttp.OkHttpHelper;
+import wy.aboutview.okhttp.RequestCenter;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, BaseCallback {
 
     private TextView pro;
     private TextView histogram;
@@ -22,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView alarmview;
     private TextView waveview;
     private TextView supertextview;
+    private OkHttpHelper instance;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,11 +55,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         alarmview.setOnClickListener(this);
         waveview.setOnClickListener(this);
         supertextview.setOnClickListener(this);
+
+        RequestCenter requestCenter = RequestCenter.getRequestCenter(getApplicationContext());
+        requestCenter.getAboutUs(String.class,this);
+        //instance.get("http://120.24.239.158:599/index.php?m=api&c=ServerInfo&a=aboutUs&time=" + System.currentTimeMillis() / 1000, String.class, this);
+
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.circleprogress:
                 startActivity(new Intent(MainActivity.this, CircleActivity.class));
                 break;
@@ -84,5 +96,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this, SuperActivity.class));
                 break;
         }
+    }
+
+    @Override
+    public void onRequestBefore() {
+        Log.d("MainActivity", "onRequestBefore");
+    }
+
+    @Override
+    public void onFailure(Request request, Exception e) {
+        String s = request.toString();
+        Log.d("MainActivity", "onFailure");
+    }
+
+    @Override
+    public void onSuccess(Response response, Object o) {
+        try {
+            String s = response.toString();
+            ResponseBody body = response.body();
+            String string = (String) o;
+            Log.d("MainActivity", "onSuccess : " + string);
+            Toast.makeText(this, string, Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void onError(Response response, int errorCode, Exception e) {
+        Log.d("MainActivity", "onError");
     }
 }
