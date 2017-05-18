@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#636a96</color>
+    <color name="colorPrimaryDark">#636a96</color>
     <color name="colorAccent">#FF4081</color>
 
     <color name="md_blue_100">#BBDEFB</color>
     <color name="music_little_title">#e9f0ff</color>
     <color name="person_center_color">#07041d</color>
+    <color name="navigation_background_light">#FFF8F8F8</color>
 </resources>

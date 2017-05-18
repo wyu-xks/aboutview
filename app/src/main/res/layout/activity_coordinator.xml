@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            >
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorPrimary"
+                    android:contentInsetStart="0dp"
+                    app:contentInsetStart="0dp"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                    <LinearLayout
+                        android:id="@+id/navigation_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/no_noise" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/default_general_margin"
+                            android:maxLines="1"
+                            android:text="啦啦啦啦"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.Toolbar>
+
+
+                <com.flyco.tablayout.SlidingTabLayout
+                    android:id="@+id/sliding_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="@dimen/default_general_margin"
+                    android:paddingRight="@dimen/default_general_margin"
+                    app:tl_indicator_corner_radius="2dp"
+                    app:tl_indicator_height="2dp"
+                    app:tl_indicator_width="40dp"
+                    app:tl_tab_space_equal="true" />
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@mipmap/b_3"
+                app:behavior_hideable="true"
+                app:behavior_peekHeight="0dp"
+                app:layout_behavior="@string/bottom_sheet_behavior">
+
+            </android.support.v4.widget.NestedScrollView>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="35dp"
+                app:backgroundTint="@color/colorPrimary"
+                app:layout_behavior="wy.aboutview.behavior.FloatingBehavior"
+                app:rippleColor="#c38dd2"
+                app:srcCompat="@mipmap/clock_icon" />
+        </android.support.design.widget.CoordinatorLayout>
+
+    </FrameLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/navigation_background_light"
+        android:overScrollMode="never"
+        app:headerLayout="@layout/navigation_head"
+        app:menu="@menu/navigation_main" />
+
+</android.support.v4.widget.DrawerLayout>
+

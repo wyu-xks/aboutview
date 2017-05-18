@@ -115,4 +115,12 @@
         android:layout_height="45dp"
         android:text="supertextview" />
 
+    <TextView
+        android:id="@+id/coordinatorLayout"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="CoordinatorLayout" />
+
 </LinearLayout>
